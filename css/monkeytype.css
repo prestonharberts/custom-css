@@ -1,0 +1,45 @@
+header #logo {
+  display: none;
+}
+
+footer {
+  display: none;
+}
+
+#testConfig .row {
+  background: #ebebeb;
+}
+
+#testConfig {
+  font-size: 0.9rem;
+}
+
+.view-leaderboards,
+button.showAlerts,
+.view-about {
+  display: none;
+}
+
+.textButton.view-account {
+  padding-left: 0;
+}
+
+.textButton.view-account .text,
+.textButton.view-account .levelAndBar {
+  display: none;
+}
+
+#restartTestButton {
+  opacity: 0;
+}
+
+#words {
+  --correct-letter-color: var(--sub-color);
+}
+
+#words .word letter.tabChar,
+#words .word letter.nlChar {
+  margin: 0;
+  opacity: 0.4;
+  color: var(--sub-color) !important;
+}

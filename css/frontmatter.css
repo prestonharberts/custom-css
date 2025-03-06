@@ -1,0 +1,18 @@
+span.cm-def.cm-hmd-frontmatter, span.cm-hmd-frontmatter {
+  font-size: 0px !important;
+  opacity: 0% !important;
+}
+
+span.cm-hmd-frontmatter {
+  line-height: 0px !important;
+  position: fixed
+}
+
+.HyperMD-header-1, h1, .cm-header-1 {
+  --p-spacing: 0rem;
+
+}
+
+/*div.cm-line:nth-of-type(1) {
+  line-height: 0px !important;
+}*/

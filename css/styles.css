@@ -1,0 +1,449 @@
+/******************** GLOBAL STYLES ********************/
+
+body {
+  --accent-h: 213;
+  --accent-s: 72%;
+  --accent-l: 54%;
+  --code-background: #f0f0f0;
+  --code-normal: #222222;
+  --divider-width: 1.5px;
+  --file-line-width: 36rem;
+  --link-unresolved-opacity: 0.5;
+  --link-decoration: none;
+  --link-external-decoration: none !important;
+  --list-marker-color: #b3b3b3;
+  --text-highlight-bg: rgb(255, 247, 195);
+  --tab-outline-width: 1.5px;
+  --p-spacing: 0.2rem;
+  --line-height-normal: 1.55rem;
+}
+
+* {
+  letter-spacing: 0.008em;
+}
+
+/******************** THEME: LIGHT AND DARK ********************/
+
+.theme-light {
+  --color-base-00: #FFFFFF;
+  --color-base-10: #d9d9d9;
+  --color-base-20: #f7f7f7;
+  --color-base-100: #252222;
+}
+
+.theme-dark {
+  --color-base-00: #242424;
+  --color-base-10: #272727;
+  --color-base-20: #292929;
+  --color-base-100: #FFFFFF;
+}
+
+/******************** TAB BAR AND TABS ********************/
+
+/* hide tab bar if only one tab is open */
+.mod-root .workspace-tab-header-container:not(:has(.workspace-tab-header-container-inner > .workspace-tab-header:nth-child(2))) {
+  display: none;
+}
+
+/* hide pinned tab icon specifically to pin tabs in sidebar*/
+.mod-pinned {
+  display: none;
+}
+
+/* adjust padding for notes in sidebar */
+.mod-sidedock .view-content>.markdown-source-view.mod-cm6>.cm-editor>.cm-scroller {
+  padding: 0 2em;
+}
+
+.workspace-tab-header-container {
+  background-color: #f7f7f7;
+  border-bottom: var(--tab-outline-width) solid var(--tab-outline-color);
+}
+
+.workspace-tab-header-inner-title {
+  font-weight: 400;
+  font-size: 11.5pt;
+}
+
+.workspace-tab-header.is-active {
+  background-color: #ebebeb !important;
+}
+
+.workspace-tab-header-inner .workspace-tab-header-inner-icon {
+  color: rgba(0, 0, 0, 0.8);
+  opacity: 1;
+}
+
+.mod-left-split .workspace-tab-header.has-active-menu .workspace-tab-header-inner-icon,
+.mod-right-split .workspace-tab-header.has-active-menu .workspace-tab-header-inner-icon,
+.mod-left-split .workspace-tab-header.is-active .workspace-tab-header-inner-icon,
+.mod-right-split .workspace-tab-header.is-active .workspace-tab-header-inner-icon {
+  color: rgba(0, 0, 0, 0.8);
+  opacity: 1;
+}
+
+.is-focused .mod-active .workspace-tab-header.is-active .workspace-tab-header-inner-icon,
+.is-focused .mod-active .workspace-tab-header.is-active .workspace-tab-header-inner-title {
+  color: rgba(0, 0, 0, 0.8);
+  opacity: 1;
+}
+
+/******************** LINKS AND HIGHLIGHTS ********************/
+
+.cm-s-obsidian span.cm-hmd-internal-link {
+  color: var(--link-color) !important;
+}
+
+.cm-s-obsidian span.obsidian-search-match-highlight {
+  box-shadow: none;
+  mix-blend-mode: none;
+  border-radius: 4px;
+  background-color: #d7e6f8;
+}
+
+.is-flashing {
+  background-color: #d7e6f8 !important;
+}
+
+.cm-s-obsidian span.cm-formatting-highlight,
+.cm-s-obsidian span.cm-highlight {
+  border-radius: 4px;
+}
+
+/******************** CODE STYLES ********************/
+
+body {
+  --code-background: #f6f8fa;
+  --code-normal: #252222;
+}
+
+/******************** DIVIDERS ********************/
+
+div {
+  --divider-vertical-height: 100%;
+}
+
+/******************** HASHTAGS ********************/
+
+.cm-hashtag.cm-hashtag-begin {
+  padding: 0em;
+}
+
+.cm-hashtag {
+  color: var(--link-color);
+  font-weight: normal;
+  font-size: var(--font-size-text);
+  background-color: rgba(0, 0, 0, 0);
+  padding: 0em !important;
+}
+
+/******************** HEADINGS ********************/
+
+h3,
+.HyperMD-header-3,
+.markdown-rendered h3 {
+  bottom: -5px;
+  color: var(--list-marker-color);
+  font-size: var(--h2-font-size);
+  font-style: italic;
+  line-height: 0px;
+  padding-top: 0.4em !important;
+}
+
+h3+*,
+.HyperMD-header-3+*,
+.markdown-rendered h3+* {
+  padding-top: 1rem !important;
+}
+
+h4,
+.HyperMD-header-4,
+.cm-header-4,
+.markdown-rendered h4 {
+  color: var(--list-marker-color);
+  font-size: 16px;
+  line-height: 50px;
+  margin-block-end: -1.0em;
+  margin-block-start: -0.5em;
+}
+
+h4+*,
+.HyperMD-header-4+*,
+.markdown-rendered h4+* {
+  padding-top: 1rem !important;
+}
+
+.HyperMD-header-1:has(+ :is(.cm-line:not([class*="header"]))) {
+  padding-bottom: 20px;
+}
+
+.HyperMD-header-2:has(+ :is(.cm-line:not([class*="header"]))),
+.HyperMD-header-3:has(+ :is(.cm-line:not([class*="header"]))),
+.HyperMD-header-4:has(+ :is(.cm-line:not([class*="header"]))),
+.HyperMD-header-5:has(+ :is(.cm-line:not([class*="header"]))) {
+  padding-bottom: 5px;
+}
+
+/******************** TABLE STYLES ********************/
+
+.table-title {
+  text-align: center;
+  font-weight: bold;
+  padding-top: 1em;
+  color: #2967b3;
+}
+
+mark {
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.cm-line:has(+ .cm-embed-block.cm-table-widget) br {
+  display: none;
+}
+
+.markdown-source-view.mod-cm6 .cm-table-widget .table-cell-wrapper {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.cm-s-obsidian .cm-table-widget th {
+  font-weight: normal;
+  font-size: 100%;
+}
+
+.markdown-source-view.mod-cm6 .cm-table-widget {
+  padding: 0em 0.5em 0 0.5em;
+}
+
+table:has(th:first-of-type + th:last-of-type) th:nth-of-type(1) {
+  width: calc(var(--file-line-width) / 2 + 1em);
+}
+
+table:has(th:first-of-type + th:last-of-type) th:nth-of-type(2) {
+  width: calc(var(--file-line-width) / 2 + 1em);
+}
+
+table:has(th:first-of-type + th + th:last-of-type) th:nth-of-type(1) {
+  width: calc(var(--file-line-width) / 3 + 0.33em);
+}
+
+table:has(th:first-of-type + th + th:last-of-type) th:nth-of-type(2) {
+  width: calc(var(--file-line-width) / 3 + 0.33em);
+}
+
+table:has(th:first-of-type + th + th:last-of-type) th:nth-of-type(3) {
+  width: calc(var(--file-line-width) / 3 + 0.33em);
+}
+
+table:has(th:first-of-type + th + th + th:last-of-type) th:nth-of-type(1) {
+  width: calc(var(--file-line-width) / 4 + 0.25em);
+}
+
+table:has(th:first-of-type + th + th + th:last-of-type) th:nth-of-type(2) {
+  width: calc(var(--file-line-width) / 4 + 0.25em);
+}
+
+table:has(th:first-of-type + th + th + th:last-of-type) th:nth-of-type(3) {
+  width: calc(var(--file-line-width) / 4 + 0.25em);
+}
+
+table:has(th:first-of-type + th + th + th:last-of-type) th:nth-of-type(4) {
+  width: calc(var(--file-line-width) / 4 + 0.25em);
+}
+
+/******************** UI AND DISPLAY ********************/
+
+body>div.titlebar>div>div.titlebar-button-container.mod-right {
+  display: none !important;
+}
+
+.workspace-tabs.mod-top-right-space .workspace-tab-header-container:after {
+  display: none !important;
+}
+
+.workspace-tab-header-inner-close-button {
+  display: none !important;
+}
+
+.workspace-tab-header-new-tab {
+  display: none !important;
+}
+
+.workspace-tab-header-tab-list {
+  display: none !important;
+}
+
+div.markdown-embed-link {
+  visibility: hidden;
+}
+
+.view-header {
+  display: none !important;
+}
+
+.external-link {
+  display: none !important;
+}
+
+.modal-close-button {
+  display: none;
+}
+
+.modal-bg {
+  height: 0;
+}
+
+.markdown-source-view.mod-cm6 .cm-panels.cm-panels-bottom {
+  background-color: #f7f7f7;
+}
+
+.cm-s-obsidian span.cm-formatting-quote {
+  padding-left: 4em;
+}
+
+.notice-container {
+  display: none !important;
+}
+
+.workspace-split.mod-left-split {
+  width: 256px !important;
+}
+
+.workspace-split.mod-right-split {
+  width: 256px !important;
+}
+
+/******************** WHITESPACE ********************/
+
+.markdown-preview-view.is-readable-line-width .markdown-preview-sizer {
+  padding-bottom: 40px !important;
+}
+
+.view-content>.markdown-source-view.mod-cm6>.cm-editor>.cm-scroller {
+  padding: 0 3em 0 3em;
+}
+
+
+/******************** QUOTEBLOCK ********************/
+
+.markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote:before {
+  display: none;
+}
+
+.markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote {
+  margin-left: 8px !important;
+}
+
+.cm-s-obsidian span.cm-formatting-quote {
+  padding-left: 30px !important;
+  margin-block-end: 0em;
+}
+
+/******************** FOOTNOTES ********************/
+
+sup.footnote-ref {
+  font-size: 12px;
+}
+
+/******************** AUDIO ********************/
+
+.markdown-source-view.mod-cm6 .cm-content>[contenteditable=false] {
+  text-align: center;
+}
+
+.internal-embed img:not([width]),
+.internal-embed audio,
+.internal-embed video {
+  max-width: 85%;
+}
+
+/******************** NOTE PREVIEW ********************/
+
+.hover-popover .markdown-embed[data-type="heading"] .inline-title,
+.popover .verse1,
+.popover .verse2,
+.popover .verse3,
+.popover .verse4 {
+  display: none !important;
+}
+
+.popover blockquote {
+  padding-left: 0em !important;
+}
+
+/******************** LIST PADDING ********************/
+
+.list-bullet {
+  right: 4px;
+}
+
+.list-number {
+  position: relative;
+  right: 4px !important;
+}
+
+.HyperMD-list-line:has(+ :is(.cm-line:not([class*="HyperMD-list-line"], [class*="header"]))) {
+  padding-bottom: 10px;
+}
+
+.cm-line:not([class*="header"], [class*="HyperMD-list-line"]):has(+ :is(.HyperMD-list-line)) {
+  padding-bottom: 10px;
+}
+
+.cm-table-widget:has(+ :is(.HyperMD-list-line)) {
+  padding-bottom: 10px !important;
+}
+
+/******************** SEARCH BAR ********************/
+
+.search-input-container:before {
+  display: none;
+}
+
+/******************** QUICK SWITCHER AND MODALS ********************/
+
+textarea,
+input.metadata-input-text,
+input[type='date'],
+input[type='datetime-local'],
+input[type='text'],
+input[type='search'],
+input[type='email'],
+input[type='password'],
+input[type='number'] {
+  padding: 16px 24px !important;
+}
+
+textarea:active,
+input.metadata-input-text:active,
+input[type='date']:active,
+input[type='datetime-local']:active,
+input[type='text']:active,
+input[type='search']:active,
+input[type='email']:active,
+input[type='password']:active,
+input[type='number']:active,
+textarea:focus,
+input.metadata-input-text:focus,
+input[type='date']:focus,
+input[type='datetime-local']:focus,
+input[type='text']:focus,
+input[type='search']:focus,
+input[type='email']:focus,
+input[type='password']:focus,
+input[type='number']:focus,
+textarea:focus-visible,
+input.metadata-input-text:focus-visible,
+input[type='date']:focus-visible,
+input[type='datetime-local']:focus-visible,
+input[type='text']:focus-visible,
+input[type='search']:focus-visible,
+input[type='email']:focus-visible,
+input[type='password']:focus-visible,
+input[type='number']:focus-visible {
+  box-shadow: none;
+}
+
+.modal-header {
+  margin-bottom: 0.5em;
+}

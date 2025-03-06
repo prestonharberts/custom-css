@@ -1,0 +1,225 @@
+/******************** CALENDAR STYLES ********************/
+
+.container.svelte-pcimu8 {
+  padding: 0 !important;
+}
+
+.title.svelte-1vwr9dd.svelte-1vwr9dd {
+  font-size: 1.2em !important;
+}
+
+.arrow.svelte-156w7na.svelte-156w7na {
+  position: relative !important;
+  top: 3px !important;
+  left: 8px;
+}
+
+.reset-button.svelte-1vwr9dd.svelte-1vwr9dd {
+  margin: 0 !important;
+  padding: 0 !important;
+  position: relative !important;
+  top: 5px !important;
+  left: 8px;
+}
+
+.svelte-1vwr9dd {
+  position: relative;
+  bottom: 5px;
+  margin: 0em 0 0em;
+}
+
+.svelte-1vwr9dd h3 {
+  position: relative;
+  top: 6px;
+}
+
+th.svelte-pcimu8 {
+  letter-spacing: 0.75px !important;
+  padding-top: 2px !important;
+}
+
+.today.svelte-q3wqg9,
+.day.has-note {
+  font-weight: 800 !important;
+}
+
+.day {
+  padding: 6px 4px !important;
+}
+
+.dot-container {
+  display: none !important;
+}
+
+/******************** CMENU STYLES ********************/
+
+#cMenuModalBar {
+  flex-direction: column;
+  box-shadow: none;
+  border-radius: 0px;
+  border: none;
+  border-top: 1px solid var(--tab-outline-color);
+  border-bottom: 1px solid var(--tab-outline-color);
+  border-left: 1px solid var(--tab-outline-color);
+  top: 40%;
+  left: 96% !important;
+}
+
+#cMenuModalBar .cMenuCommandItem {
+  background-color: transparent;
+  margin: 0 2px;
+}
+
+.cMenuDefaultAesthetic {
+  bottom: unset !important;
+}
+
+/******************** HIGHLIGHTR STYLES ********************/
+
+.highlightr-rounded mark,
+.highlightr-rounded .markdown-preview-view mark {
+  padding: 0.075em 0em;
+}
+
+.hltr-pink,
+mark.hltr-pink,
+.markdown-preview-view mark.hltr-pink {
+  background: #FFB8EB55 !important;
+}
+
+.hltr-red,
+mark.hltr-red,
+.markdown-preview-view mark.hltr-red {
+  background: #FF558255 !important;
+}
+
+.hltr-orange,
+mark.hltr-orange,
+.markdown-preview-view mark.hltr-orange {
+  background: #FFB86C55 !important;
+}
+
+.hltr-yellow,
+mark.hltr-yellow,
+.markdown-preview-view mark.hltr-yellow {
+  /*background: #FFF3A355 !important;*/
+  background: #ADCCFF50 !important;
+}
+
+.hltr-green,
+mark.hltr-green,
+.markdown-preview-view mark.hltr-green {
+  background: none !important;
+  padding-bottom: 1px;
+  border-radius: 0.2em;
+  position: relative;
+}
+
+.hltr-green::after,
+mark.hltr-green::after,
+.markdown-preview-view mark.hltr-green::after {
+  content: '';
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #ADCCFF75;
+  border-radius: 0.5em;
+}
+
+/*.hltr-blue,*/
+/*mark.hltr-blue,*/
+/*.markdown-preview-view mark.hltr-blue {*/
+/*  /*background: #ADCCFF55 !important;*/
+*/
+/*  background: none !important;*/
+/*  border-radius: 0.2em;*/
+/*  border: #ADCCFF95 solid 3px;*/
+/*  border-radius: 0.8em;*/
+/*  padding: 0px;*/
+/*}*/
+
+/******************** QUIET OUTLINE STYLES ********************/
+
+div {
+  --nav-item-color: #5c5c5c;
+  --8de97876-locatedColor: var(--nav-item-color);
+}
+
+.mod-left-split .view-content:has(.quiet-outline) {
+  padding: 18px;
+}
+
+.n-tree-node.n-tree-node--selectable.level-1 .n-tree-node-content,
+.n-tree-node.n-tree-node--selected.n-tree-node--selectable.level-1.located p {
+  color: rgb(70, 143, 226) !important;
+  font-weight: 600 !important;
+}
+
+.n-tree-node.n-tree-node--selectable.level-2:has(.larrow) {
+  display: none;
+}
+
+.n-tree-node.n-tree-node--selectable.level-5 .n-tree-node-content {
+  display: none;
+}
+
+.quiet-outline .n-tree-node-content__text p {
+  text-align: left;
+}
+
+.n-tree-node.located {
+  font-weight: normal !important;
+}
+
+.n-tree-node-indent {
+  display: none;
+}
+
+.n-tree .n-tree-node-switcher {
+  display: none;
+}
+
+.n-slider {
+  padding-bottom: 10px !important;
+}
+
+/******************** CODE STYLER EXTENSION ********************/
+
+body.code-styler.theme-light {
+  --code-styler-codeblock-background-colour: #f7f7f7 !important;
+  --code-styler-gutter-background-colour: #f7f7f7 !important;
+}
+
+.code-styler.code-styler-style-inline .cm-s-obsidian span.cm-inline-code,
+.code-styler.code-styler-style-inline .markdown-rendered :not(pre)>code:not([class*=blur]),
+.code-styler.code-styler-style-inline .reveal :not(pre)>code:not([class*=blur]),
+.code-styler.code-styler-style-inline code.code-styler-settings-inline-code {
+  background-color: #ffffff !important;
+}
+
+.code-styler .markdown-source-view .HyperMD-codeblock[class*=code-styler-line] {
+  background: var(--code-styler-codeblock-background-colour) !important;
+}
+
+body.code-styler .markdown-source-view :not(pre.code-styler-pre)>.code-styler-header-container-hidden+[class*=code-styler-line].HyperMD-codeblock-begin {
+  margin-top: 10px !important;
+}
+
+.code-styler .markdown-source-view [class*=code-styler-line].HyperMD-codeblock-end {
+  margin-bottom: 10px !important;
+}
+
+.HyperMD-header-1:has(+ :is([class*="code-styler"])) {
+  padding-bottom: 10px !important;
+}
+
+.HyperMD-header-2:has(+ :is([class*="code-styler"])) {
+  padding-top: 20px !important;
+  bottom: 15px;
+}
+
+.HyperMD-header-3:has(+ :is([class*="code-styler"])) {
+  padding-bottom: 10px !important;
+}

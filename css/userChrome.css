@@ -1,0 +1,8 @@
+/* hides the title bar */
+#titlebar {
+  visibility: collapse !important;
+}
+
+#TabsToolbar {
+  visibility: collapse !important;
+}
