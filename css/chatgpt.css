@@ -75,6 +75,8 @@ nav[aria-label="Chat history"] {
   border-left-color: currentcolor;
   border-left-color: currentcolor;
   border-color: #e0e0e0;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
 }
 
 /* add border to texting box and change bg color */
@@ -82,4 +84,14 @@ nav[aria-label="Chat history"] {
   background-color: #fafafa;
   border-width: 1px;
   border-color: #e0e0e0;
+}
+
+/* remove header in sidebar */
+.flex.justify-between.h-header-height.xs\:pe-3.flex.items-center {
+  height: 0rem;
+}
+
+/* remove right padding in sidebar */
+.pe-3 {
+  padding-inline-end: 0;
 }
