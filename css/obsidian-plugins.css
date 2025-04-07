@@ -1,5 +1,9 @@
 /******************** CALENDAR STYLES ********************/
 
+.nav.svelte-1vwr9dd.svelte-1vwr9dd {
+  margin: 0 0 12px !important;
+}
+
 .container.svelte-pcimu8 {
   padding: 0 !important;
 }
@@ -10,20 +14,26 @@
 }
 
 .reset-button.svelte-1vwr9dd {
-  font-size: 0.9em !important;
+  font-size: 0.8em !important;
+}
+
+.arrow.svelte-156w7na svg.svelte-156w7na {
+  position: relative !important;
+  height: 12px;
 }
 
 .arrow.svelte-156w7na.svelte-156w7na {
   position: relative !important;
-  top: 3px !important;
+  top: 2px !important;
   left: 8px;
+  opacity: 80%;
 }
 
 .reset-button.svelte-1vwr9dd.svelte-1vwr9dd {
   margin: 0 !important;
   padding: 0 !important;
   position: relative !important;
-  top: 4px !important;
+  top: 3px !important;
   left: 8px;
 }
 
