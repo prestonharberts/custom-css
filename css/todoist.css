@@ -12,7 +12,7 @@ body {
 }
 
 :root {
-  --rbc-grid-divider: 1.5px solid var(--reactist-divider-secondary) !important;
+  --rbc-grid-divider: 0 solid var(--reactist-divider-secondary) !important;
 }
 
 /*:host(.theme_moonstone), :root.theme_moonstone {*/
@@ -100,4 +100,43 @@ body {
 
 .z9PJyaa.cZu8y64.IVYciZ1.fb8d74bb._14423c92._5f8879d9.b76144ce.b4e05554 {
   display: none;
+}
+
+/* box borders */
+.k0BzUqn {
+  border: none !important;
+}
+
+._DeLw8f,
+.mJjs5Yi {
+  border-bottom: 0px solid var(--reactist-divider-secondary) !important;
+}
+
+._6eb365d1>*:first-child {
+  display: none !important;
+}
+
+._6eb365d1 {
+  justify-content: flex-end !important;
+  padding: 0 8px !important;
+  position: relative;
+  bottom: -3px !important;
+}
+
+
+/* fix "All Day" spacing */
+.mJjs5Yi {
+  top: -0.5px !important;
+}
+
+/* hide various topbar items */
+.c68f8bf6,
+.LUzHGdi ._80d80C_,
+.fwBw5Mb,
+.EnOQGHT {
+  display: none !important;
+}
+
+.today_view {
+  padding-top: 20px !important;
 }
