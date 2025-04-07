@@ -142,10 +142,10 @@ div {
 h3,
 .HyperMD-header-3,
 .markdown-rendered h3 {
-  bottom: -5px;
   color: var(--list-marker-color);
   font-size: var(--h2-font-size);
   font-style: italic;
+  bottom: -5px;
   line-height: 0px;
   padding-top: 0.4em !important;
 }
@@ -162,9 +162,9 @@ h4,
 .markdown-rendered h4 {
   color: var(--list-marker-color);
   font-size: 16px;
-  line-height: 50px;
-  margin-block-end: -1.0em;
-  margin-block-start: -0.5em;
+  bottom: -5px;
+  line-height: 0px;
+  padding-top: 0.4em !important;
 }
 
 h4+*,

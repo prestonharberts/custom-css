@@ -6,6 +6,11 @@
 
 .title.svelte-1vwr9dd.svelte-1vwr9dd {
   font-size: 1.2em !important;
+  font-style: normal;
+}
+
+.reset-button.svelte-1vwr9dd {
+  font-size: 0.9em !important;
 }
 
 .arrow.svelte-156w7na.svelte-156w7na {
@@ -18,7 +23,7 @@
   margin: 0 !important;
   padding: 0 !important;
   position: relative !important;
-  top: 5px !important;
+  top: 4px !important;
   left: 8px;
 }
 
@@ -35,12 +40,14 @@
 
 th.svelte-pcimu8 {
   letter-spacing: 0.75px !important;
-  padding-top: 2px !important;
+  padding-top: 0px !important;
 }
 
 .today.svelte-q3wqg9,
 .day.has-note {
-  font-weight: 800 !important;
+  font-weight: 900 !important;
+  text-decoration-line: underline;
+  text-decoration-style: double;
 }
 
 .day {
@@ -222,4 +229,9 @@ body.code-styler .markdown-source-view :not(pre.code-styler-pre)>.code-styler-he
 
 .HyperMD-header-3:has(+ :is([class*="code-styler"])) {
   padding-bottom: 10px !important;
+}
+
+/* clipboard icon */
+.markdown-source-view.mod-cm6 .HyperMD-codeblock.code-styler-line span.code-block-flair {
+  transform: translateY(80%);
 }

@@ -253,6 +253,19 @@ h6 {
   position: static;
 }
 
+/* H1 TRANSLATION ABBREVIATION */
+
+/* requires <span class=translation>NET</span>
+   to be appended to end of H1, aliases, prev,
+   next, and outlines
+*/
+.translation {
+  color: var(--list-marker-color);
+  font-weight: 600;
+  font-size: 75%;
+  padding-left: 5px;
+}
+
 /******************** HIDE HEADINGS IN POPUP PREVIEW ********************/
 
 .hover-popover .markdown-embed[data-type="heading"] .inline-title,
