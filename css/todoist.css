@@ -11,11 +11,16 @@ body {
   --product-library-background-raised-tertiary: #f7f7f7;
 }
 
+:root {
+  --rbc-grid-divider: 1.5px solid var(--reactist-divider-secondary) !important;
+}
+
 /*:host(.theme_moonstone), :root.theme_moonstone {*/
 :host([class^="theme_"]),
 :root[class^="theme_"] {
   /*--product-library-priorities-p1-secondary-disabled-fill: none;*/
   /*--product-library-priorities-p1-secondary-selected-fill: none;*/
+  --product-library-divider-secondary: #e0e0e0 !important;
   --product-library-priorities-p1-secondary-hover-fill: #ebebeb !important;
   --product-library-priorities-p1-secondary-idle-fill: none !important;
   --product-library-priorities-p2-secondary-hover-fill: #ebebeb !important;
