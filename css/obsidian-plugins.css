@@ -53,8 +53,7 @@ th.svelte-pcimu8 {
   padding-top: 0px !important;
 }
 
-.today.svelte-q3wqg9,
-.day.has-note {
+.today.svelte-q3wqg9 {
   font-weight: 900 !important;
   text-decoration-line: underline;
   text-decoration-style: double;
